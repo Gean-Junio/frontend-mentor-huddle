@@ -1,0 +1,115 @@
+body{
+    background-color: var(--violet);
+    font-size: 62.5%;
+}
+
+.main{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "logo logo"
+                         "illustration info";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    background: url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+    padding: 0 60px;
+}
+
+.logo{
+    grid-area: logo;
+    display: flex;
+    align-items: end;
+    padding-left: 0 30px;
+}
+
+.illustration{
+    grid-area: illustration;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    grid-area: info;
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    padding: 30px;
+}
+
+.illustration-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info .illustration-info p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.info .illustration-info h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.info .btn{
+    padding: 30px 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.info .btn-register{
+    padding: 15px 50px;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.info .btn-register:hover{
+    background-color: var(--soft-magenta);
+    color: #ffffff;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.social ul{
+    display: flex;
+    font-size: 1.6rem;
+    bottom: 40px;
+    right: 100px;
+}
+
+.social ul li a{
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px white solid;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.social ul li a:hover{
+    color: var(--soft-magenta);
+    border: 1px var(--soft-magenta) solid
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.footer a{
+    color: #ffffff;
+}
